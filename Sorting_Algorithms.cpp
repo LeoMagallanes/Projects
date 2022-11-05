@@ -16,7 +16,7 @@ void imprimirMenuInicial();
 int validarMenu(int);
 void menuOrdenamientos();
 int validarMenuOrdenamientos(int);
-void randomArray(vector<int> &, int,int);
+void randomArray(vector<int> &, int);
 
 void burbuja(vector<int> &, int);
 void metodosOrdenamiento(vector<int> &, int, int,int,int);
@@ -77,35 +77,20 @@ int main() {
 
 							vector<int> array(tam);
 							int n = sizeof(array)/sizeof(array[0]);
-							randomArray(array, tam, range);//Llenado vector aleatorio
+							randomArray(array, tam);//Llenado vector aleatorio
 						
 							metodosOrdenamiento(array, tam, opcion, range, tam);
-							
-							//calculo de tiempo
-							
-							//double seconds_since_start = difftime( time(0), start);
-							//cout << "Tiempo en ordenar: " << seconds_since_start << endl;
-							//estadisticas
-							//tiempo- mayor, promedio, menor
-							
-							/*cout << endl << "El arreglo ordenado es: "<< endl;
-							for (int i = 0; i < tam; i++)
-							{
-								cout << array[i] << " ";
-							}
-							cout << endl;*/
-						
 						}//end for
 						break;
 					}//end case 1 subwitch 2 ordenamientos
 					case 2: {//Pruebas grupales			
-						cout << "hola" << endl;
+							cout << "Ingrese el tamanio de su vector" << endl;
+							cin >> tam;
+							vector<int> v(tam);
+							randomArray(v, tam);
+
 						break;
-					}//end case 2 subswitch ordenamientos
-					case 3:{//Pruebas grupales 3 metodos de mi eleccion
-						cout << "hola" << endl;
-						break;
-					}//end case 3 subswitch ordenamientos				
+					}//end case 2 subswitch 2 ordenamientos.				
 					case 0:{
 						int validacion = -1;
 						cout << "Seguro que quieres salir(si pon 0): " << endl;
@@ -117,7 +102,14 @@ int main() {
 					break;//break switch principal case 1:
 				} // End subswitch 2 ordenamientos
 			}//end case 1 switch principal
-			case 2:{
+			case 2:{ // Start case 2 switch principal. Pruebas Todos.
+				int n;
+				cout << "Ingrese el tamaño de su vector\n";
+				cin >> n;
+				vector<int> v(n);
+
+				randomArray(v, tam);//Llenado vector aleatorio
+				
 				
 				break;
 			}//end case 2 switch principal
@@ -160,20 +152,19 @@ void menuOrdenamientos() {
 	cout <<  "\nCon que pruebas quieres comenzar?\n";
 	cout << "1) Pruebas individuales\n";
 	cout << "2) Pruebas grupales\n";
-	cout << "3) Pruebas grupales con Quick sort...\n";
 	cout << "0) Salir\n";
 }
 
 int validarMenuOrdenamientos(int opcion) {
 	menuOrdenamientos();
 	cin >> opcion;
-	while (opcion < 0 || opcion > 3) { //Validar el input
+	while (opcion < 0 || opcion > 2) { //Validar el input
 		cout << "Ingrese un numero en el rango de 0 - 3\n";
 		cin >> opcion;
 	}
 	return opcion;
 }
-void randomArray(vector<int> &array,int tam,int range) {//Generate random array
+void randomArray(vector<int> &array, int tam) {//Generate random array
 	int aleatorio = 0, sup = 0, inf = 0, n = 0;
 	srand(time(NULL));
 	cout << "numero aleatorio\n";
@@ -181,7 +172,6 @@ void randomArray(vector<int> &array,int tam,int range) {//Generate random array
 	cin >> inf;
 	cout << "Ingrese el limite superior\n";
 	cin >> sup;
-	range = sup;
 	
 	for (int i = 0; i < tam; i++){
 		aleatorio = inf + rand() % (sup + 1 - inf);

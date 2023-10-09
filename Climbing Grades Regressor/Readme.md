@@ -72,7 +72,7 @@ You can install these dependencies using `pip` and the provided `requirements.tx
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ## Contributors
 This project was developed by Javier Fernando Romo Urrutia and Leonardo Alejandro Magallanes Tejada as a part of a final project in our machine learning class.

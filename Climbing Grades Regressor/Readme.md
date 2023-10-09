@@ -1,8 +1,9 @@
-#Overview
+## Overview
+
 The objective of the project is to predict climbing grades based on different features.
 We aim to develop a predictive model that estimates climbing grades based on various climber attributes.
 
-##Data
+## Data
 
 The dataset used was obtained from https://www.kaggle.com/datasets/jordizar/climb-dataset
 
@@ -11,7 +12,7 @@ It contains 3 different archives.
 2. **grades_conversion_table.csv**. It contains 2 features; grade_id and grade_fra. This archive is used to convert from the data of the dataset to the french grading system.
 3. **climber_df.csv**. This is where the most important features are such as height, weight, age, years climbing and maximum grade climbed. It has 16 features.
 
-##Analysis
+## Analysis
 
 Importance:
 Accurate climbing grade predictions can enhance safety by helping climbers choose routes that match their skill level. Novice climbers can avoid overly challenging routes, reducing the risk of accidents, while experienced climbers can find routes that provide the appropriate level of challenge to further develop their skills
@@ -23,7 +24,8 @@ Challenges:
 It is hard to have an accurate prediction with the information on the dataset, I think that in order to have a valuable grade prediction we should also have information about the capabilities of the climber such as finger strength tests, pull strength test and other various tests.
 Given this limitations this predictions should be taken with caution.
 
-##Machine Learning Models
+## Machine Learning Models
+
 Briefly introduce the five machine learning regressors you used for prediction:
 
 **SVC**: Support Vector Classifier is a supervised learning algorithm used for classification tasks.
@@ -34,10 +36,12 @@ Briefly introduce the five machine learning regressors you used for prediction:
 
 
 
-##Model Training
+## Model Training
+
 Explain how you split the data into training and testing sets and any cross-validation techniques you used. Mention if you tuned hyperparameters for each model.
 
-##Results
+## Results
+
 | Model  | MAE  | MSE  | R^2  |
 | ------------ | ------------ | ------------ | ------------ |
 |SVC   |9.48   |147.81   |-0.55   |
@@ -50,6 +54,7 @@ We evaluated the models with the metric Minimun Absolut Error(MAE), Minimim Squa
 From this table we can see that the best performing model was the Random Forest Regressor.
 
 ## Dependencies
+
 You can run this code by simply using google colaboratory or follow the next instructions.
 
 To run this project, you'll need to have the following Python packages and libraries installed:
@@ -68,15 +73,16 @@ You can install these dependencies using `pip` and the provided `requirements.tx
 ```bash
 pip install -r requirements.txt
 
-##Contributors
+
+## Contributors
 This project was developed by Javier Fernando Romo Urrutia and Leonardo Alejandro Magallanes Tejada as a part of a final project in our machine learning class.
 
-##Acknowledgments
+## Acknowledgments
 The original dataset was taken from the page [8a.nu](https://www.8a.nu/ "8a.nu") by David Cohen and then we used the 3 tables uploaded by [Jordi Zaragoza.](http://https://www.kaggle.com/datasets/jordizar/climb-dataset "Jordi Zaragoza")
 ##Contact Information
 0236887@up.edu.mx
 
-##Conclusion
+## Conclusion
 After thorough evaluation and comparative analysis of the machine learning models, we have chosen the Random Forest Regressor as our preferred model for predicting climbing grades. This decision is backed by the model's outstanding performance in terms of key metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and the coefficient of determination (R²).
 
 ur GitHub repository provides access to the code, data, and detailed documentation, allowing users to explore the model, replicate our findings, and contribute to further improvements. We believe that this project not only advances our understanding of climbing grade prediction but also serves as a valuable resource for the climbing community and machine learning enthusiasts alike.

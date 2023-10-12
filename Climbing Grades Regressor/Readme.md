@@ -26,19 +26,23 @@ Given this limitations this predictions should be taken with caution.
 
 ## Machine Learning Models
 
-Briefly introduce the five machine learning regressors you used for prediction:
+These are the 5 different regressors model that we used for predicting.
 
 **SVC**: Support Vector Classifier is a supervised learning algorithm used for classification tasks.
+
 **RandomForestRegressor**: RandomForestRegressor is an ensemble learning method based on decision trees.
+
 **MLPRegressor**: Multi-Layer Perceptron Regressor is a type of artificial neural network commonly used for regression and classification tasks.
+
 **KNeighborsRegressor**: K-Nearest Neighbors Regressor K-Nearest Neighbors is a simple yet effective algorithm for regression tasks. 
+
 **LinearRegression**: Linear Regression Linear Regression is one of the most basic and widely used regression algorithms.  It models the relationship between the target variable and predictor variables as a linear equation.
 
 
 
 ## Model Training
 
-Explain how you split the data into training and testing sets and any cross-validation techniques you used. Mention if you tuned hyperparameters for each model.
+
 
 ## Results
 

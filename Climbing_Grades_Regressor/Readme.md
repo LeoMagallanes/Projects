@@ -89,6 +89,8 @@ The original dataset was taken from the page [8a.nu](https://www.8a.nu/ "8a.nu")
 ## Conclusion
 After thorough evaluation and comparative analysis of the machine learning models, we have chosen the Random Forest Regressor as our preferred model for predicting climbing grades. This decision is backed by the model's outstanding performance in terms of key metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and the coefficient of determination (R²).
 
-ur GitHub repository provides access to the code, data, and detailed documentation, allowing users to explore the model, replicate our findings, and contribute to further improvements. We believe that this project not only advances our understanding of climbing grade prediction but also serves as a valuable resource for the climbing community and machine learning enthusiasts alike.
+Our GitHub repository provides access to the code, data, and detailed documentation, allowing users to explore the model, replicate our findings, and contribute to further improvements. We believe that this project not only advances our understanding of climbing grade prediction but also serves as a valuable resource for the climbing community and machine learning enthusiasts alike.
 
 We encourage you to dive into our repository, experiment with the model, and join us in the quest to enhance climbing grade predictions and promote safer and more enjoyable climbing experiences.
+
+Also for a more accurate precision we would need more accurate and robust data. Data from each climber like performance evaluations, evaluate the maximum grip strength in a specified and standarized hold, maximum pull up weight and other important features. We can't prove that the data in the dataset is true, because in the 8a.nu each climber can upload any route without proof that he indeed climbed the route. 
